@@ -136,7 +136,7 @@ jobs:
           # CONFIG_PACKAGE_kmod-usb2=y
           # CONFIG_PACKAGE_kmod-usb2-pci=y
           # CONFIG_PACKAGE_kmod-usb3=y
-          EOF
+          #  EOF
 
           # 常用LuCI插件选择:
           cat >> .config <<EOF
@@ -161,7 +161,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-webadmin=y
           # CONFIG_PACKAGE_luci-app-wireguard=y
           # CONFIG_PACKAGE_luci-app-wrtbwmon=y
-          # EOF
+          EOF
 
           # LuCI主题:
           # cat >> .config <<EOF
