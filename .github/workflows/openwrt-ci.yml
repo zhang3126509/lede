@@ -22,7 +22,7 @@ jobs:
 
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: use Ubuntu-20.04
 
     steps:
 
