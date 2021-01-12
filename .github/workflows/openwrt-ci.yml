@@ -104,7 +104,6 @@ jobs:
           cat >> .config <<EOF
           CONFIG_TARGET_x86=y
           CONFIG_TARGET_x86_generic=y
-          CONFIG_TARGET_x86_generic_DEVICE_generic=y
           EOF
 
           # 固件压缩:
@@ -168,10 +167,10 @@ jobs:
           EOF
 
           # LuCI主题:
-          # cat >> .config <<EOF
-          # CONFIG_PACKAGE_luci-theme-argon=y
-          # CONFIG_PACKAGE_luci-theme-netgear=y
-          # EOF
+          cat >> .config <<EOF
+          CONFIG_PACKAGE_luci-theme-argon=y
+          CONFIG_PACKAGE_luci-theme-netgear=y
+          EOF
 
           # 常用软件包:
           # cat >> .config <<EOF
