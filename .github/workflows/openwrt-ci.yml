@@ -13,14 +13,10 @@ on:
   push:
     branches: 
       - master
-  # schedule:
-  #   - cron: 0 20 * * *
-  # release:
-  #   types: [published]
-env:
-  DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part2.sh
-
+  schedule:
+    - cron: 0 20 * * *
+  release:
+    types: [published]
 
 jobs:
 
@@ -197,6 +193,7 @@ jobs:
           # 
 
           sed -i 's/^[ \t]*//g' ./.config
+          sed -i 's/192.168.1.1/192.168.1.20/g' package/base-files/files/bin/config_generate
           make defconfig
 
       - name: Make download
