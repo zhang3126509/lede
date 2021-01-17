@@ -103,8 +103,10 @@ jobs:
           # 编译x86固件:
           cat >> .config <<EOF
           CONFIG_TARGET_x86=y
-          CONFIG_TARGET_x86_64=y
-          CONFIG_TARGET_x86_64_Generic=y
+          CONFIG_TARGET_x86_generic=y
+          CONFIG_TARGET_MULTI_PROFILE=y
+          CONFIG_TARGET_DEVICE_x86_generic_DEVICE_generic=y
+          CONFIG_TARGET_DEVICE_PACKAGES_x86_generic_DEVICE_generic=""
           EOF
 
           # 固件压缩:
