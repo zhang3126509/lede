@@ -102,7 +102,7 @@ jobs:
           CONFIG_TARGET_x86_generic=y
           CONFIG_TARGET_MULTI_PROFILE=y
           CONFIG_TARGET_DEVICE_x86_generic_DEVICE_generic=y
-          CONFIG_TARGET_DEVICE_PACKAGES_x86_generic_DEVICE_generic=""
+          CONFIG_TARGET_DEVICE_PACKAGES_x86_generic_DEVICE_generic="generic"
           EOF
 
           # 固件压缩:
